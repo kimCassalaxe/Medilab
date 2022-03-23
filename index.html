@@ -7,17 +7,18 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- icons -->
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
   <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-  <script src='main.js'></script>
 </head>
 <body>
   <header>
     <div class="backgroundHeader">
     </div>
     <div class="bar">
-      <div class="header">
-        <div class="contact">
+      <div class="header headerShow" id="header">
+        <div class="contact" id="headerContact">
           <a href="#"><img class="icons" src="/icons/icons8-mail-50.png"> kimcassalaxe@gmail.com</a>
           <a href="#"><img class="icons" src="/icons/icons8-iphone-50.png"> +244 937 957 153</a>
         </div>
@@ -32,13 +33,16 @@
         <h1 class="logo">medilab</h1>
         <ul id="menu" class="menu">
           <li><a href="index.html">home</a></li>
-          <li><a href="about">about</a></li>
-          <li><a href="index.html">services</a></li>
-          <li><a href="index.html">departments</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#services">services</a></li>
+          <li><a href="#Appointment">departments</a></li>
           <li><a href="index.html">doctors</a></li>
           <li><a href="index.html">contact</a></li>
         </ul>
-        <button class="btn" id="btn"> Make an Appointment</button>
+        <div class="menuBnt">
+          <button class="btn" id="btn"><span>Make an </span>Appointment</button>
+          <label class="menuMobile" id="menuMobile">&#9776;</label>
+        </div>
       </nav>
     </div>
     <div class="banner">
@@ -49,7 +53,7 @@
   
   </header>
   <!----strar cards---->
-  <section class="cards">
+  <section class="cards sectionDefault">
     <article class="item1">
       <h2>Why Choose Medilab?</h2>
       <p>
@@ -81,18 +85,22 @@
   <!----start about---->
   <section class="about" id="about">
     <div class="tescrition">
-    <img src="/img/about.jpg" alt="aboutFoto">
-    <article class="text">
-      <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-      <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate</p>
-      <ul>
-        <li>
-          <img src="/icons/fingerprint_black_24dp.svg" alt="">
-          <h4>Lorem Ipsum</h4>
-          <p>
-            Voluptatum deleniti atque corrupti quos dolores et quas  molestias excepturi sint occaecati cupiditate non provident
-          </p>
-        </li>
+      <img src="/img/about.jpg" alt="aboutFoto">
+      <article class="text">
+        <h3>
+          Enim quis est voluptatibus aliquid consequatur fugiat
+        </h3>
+        <p>
+          Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit aut voluptate
+        </p>
+        <ul>
+          <li>
+            <img src="/icons/fingerprint_black_24dp.svg" alt="">
+            <h4>Lorem Ipsum</h4>
+            <p>
+              Voluptatum deleniti atque corrupti quos dolores et quas  molestias excepturi sint occaecati cupiditate non provident
+            </p>
+          </li>
         <li>
           <img src="/icons/card_giftcard_white_24dp.svg" alt="">
           <h4>Nemo Enim</h4>
@@ -112,32 +120,342 @@
     </div>
     <article class="cards2">
       <aside>
-      <i><img class="icons" src="/icons/icons8-image-gallery-50.png"></i>
+      <i><img class="icons" src="/icons/reshot-icon-doctor-C4TAJYS3QG.svg"></i>
       <h2>85</h2>
       <p>Doctors</p>
       </aside>
       <aside>
-        <i><img class="icons" src="/icons/icons8-image-gallery-50.png"></i>
+        <i><img class="icons" src="/icons/reshot-icon-hospital-LK2RYWF4AQ.svg"></i>
         <h2>18</h2>
         <p>departments</p>
-        </aside>
-        <aside>
-          <i><img class="icons" src="/icons/icons8-image-gallery-50.png"></i>
+      </aside>
+      <aside>
+          <i><img class="icons" src="/icons/reshot-icon-flask-experiment-bubbles-85GJFHBMCZ.svg"></i>
           <h2>12</h2>
           <p>Research Labs</p>
-          </aside>
-          <aside>
-            <i><img class="icons" src="/icons/"></i>
+      </aside>
+      <aside>
+            <i><img class="icons" src="/icons/reshot-icon-medal-C93D7Q8SWX.svg"></i>
             <h2>150</h2>
             <p>Awords</p>
-            </aside>
+      </aside>
     </article>
   </section>
   <!----end about---->
 
   <!----start services---->
-  <section class="services" id="services"></section>
+  <section class="services sectionDefault" id="services">
+    <h2>services</h2>
+    <p>
+      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas
+    </p>
+    <article>
+      <aside>
+        <img src="/icons/reshot-icon-heart-rate-WPJ8L46CXA-52932.svg">
+        <h3>Lorem Ipsum</h3>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </aside>
+      <aside>
+        <img src="/icons/reshot-icon-heart-rate-WPJ8L46CXA-52932.svg">
+        <h3>Lorem Ipsum</h3>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </aside>
+      <aside>
+        <img src="/icons/reshot-icon-heart-rate-WPJ8L46CXA-52932.svg">
+        <h3>Lorem Ipsum</h3>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </aside>
+      <aside>
+        <img src="/icons/reshot-icon-heart-rate-WPJ8L46CXA-52932.svg">
+        <h3>Lorem Ipsum</h3>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </aside>
+      <aside>
+        <img src="/icons/reshot-icon-heart-rate-WPJ8L46CXA-52932.svg">
+        <h3>Lorem Ipsum</h3>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </aside>
+      <aside>
+        <img src="/icons/reshot-icon-heart-rate-WPJ8L46CXA-52932.svg">
+        <h3>Lorem Ipsum</h3>
+        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+      </aside>
+    </article>
+  </section>
   <!----end services---->
+
+  <!----start Make an Appointment---->
+  <section class="Appointment sectionDefault">
+    <h2>Make an Appointment</h2>
+    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas</p>
+    <form action="">
+      <input type="text" placeholder="Your Name" class="input txtname" id="txtname">
+      <input type="email" placeholder="Your Email" class="input txtemail" id="txtemail">
+      <input type="tel" placeholder="Your Phone" class="input txtphone" id="txtphone">
+      <input type="date" class="input txtdate" id="txtdate">
+      <select name="department" id="department" class="input txtdepartament">
+        <option value="">Select Department</option>
+        <option value="Department 1">Department 1</option>
+        <option value="Department 2">Department 2</option>
+        <option value="Department 3">Department 3</option>
+      </select>
+      <select name="doctor" id="doctor" class="input txtdoctor">
+        <option value="">Select Doctor</option>
+        <option value="Doctor 1">Doctor 1</option>
+        <option value="Doctor 2">Doctor 2</option>
+        <option value="Doctor 3">Doctor 3</option>
+      </select>
+      <textarea name="" id="txtaria" class="txtaria input" cols="30" rows="10"></textarea>
+      <button class="btn btnAppointment" id="Appointment">
+        Make an Appointment
+      </button>
+    </form>
+  </section>
+  <!----end Make an Appointment---->
+
+  <!----start Departments---->
+  <section class="Departments sectionDefault" id="Departments">
+    <h2>Departments</h2>
+    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    <article id="DepartmentsDescrition">
+      <ul>
+        <li id="Cardiology"> Cardiology</li>
+        <li id="Neurology"> Neurology</li>
+        <li id="Hepatology"> Hepatology</li>
+        <li id="Padiatrics"> Padiatrics</li>
+        <li id="Eye_Care"> EyeCare</li>
+      </ul>
+      <aside id="typeDepartament">
+        
+      </aside>
+    </article>
+  </section>
+  <!----end Departments---->
+
+ <!----start services---->
+ <section class="Doctors sectionDefault" id="Doctors">
+  <h2>Doctors</h2>
+  <p>
+    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas
+  </p>
+  <article>
+    <aside>
+      <h3>Walter White</h3>
+      <span>Chief Medical Officer</span>
+      <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+      <div class="socialNetwork" id="socialNetwork">
+        <a href="#"><img src="icons/icons8-twitter-50.png"></a>
+        <a href="#"><img src="icons/icons8-facebook-50.png"></a>
+        <a href="#"><img src="icons/icons8-instagram-50.png"></a>
+        <a href="#"><img src="icons/icons8-linkedin-50.png"></a>
+      </div>
+    </aside>
+    <aside>
+      <h3>Walter White</h3>
+      <span>Chief Medical Officer</span>
+      <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+      <div class="socialNetwork" id="socialNetwork">
+        <a href="#"><img src="icons/icons8-twitter-50.png"></a>
+        <a href="#"><img src="icons/icons8-facebook-50.png"></a>
+        <a href="#"><img src="icons/icons8-instagram-50.png"></a>
+        <a href="#"><img src="icons/icons8-linkedin-50.png"></a>
+      </div>
+    </aside>
+    <aside>
+      <h3>Walter White</h3>
+      <span>Chief Medical Officer</span>
+      <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+      <div class="socialNetwork" id="socialNetwork">
+        <a href="#"><img src="icons/icons8-twitter-50.png"></a>
+        <a href="#"><img src="icons/icons8-facebook-50.png"></a>
+        <a href="#"><img src="icons/icons8-instagram-50.png"></a>
+        <a href="#"><img src="icons/icons8-linkedin-50.png"></a>
+      </div>
+    </aside>
+    <aside>
+      <h3>Walter White</h3>
+      <span>Chief Medical Officer</span>
+      <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+      <div class="socialNetwork" id="socialNetwork">
+        <a href="#"><img src="icons/icons8-twitter-50.png"></a>
+        <a href="#"><img src="icons/icons8-facebook-50.png"></a>
+        <a href="#"><img src="icons/icons8-instagram-50.png"></a>
+        <a href="#"><img src="icons/icons8-linkedin-50.png"></a>
+      </div>
+    </aside>
+    
+    
+    
+  </article>
+</section>
+<!----end Doctors---->
+
+<!----start Asked_Questions---->
+  <section class="Asked_Questions" id="Asked_Questions">
+    <h2>Frequently Asked Questions</h2>
+    <p>
+      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+    </p>
+    <article id="dealog">
+      <aside>
+        <a href=""><i class="fi fi-rr-interrogation"></i>Non consectetur a erat nam at lectus urna duis?</a>
+        <i class="fi fi-rr-angle-down" id="down"></i>
+        <p id="PResp">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+      </aside>
+      <aside>
+        <a href=""><i class="fi fi-rr-interrogation"></i>Feugiat scelerisque varius morbi enim nunc?</a>
+        <i class="fi fi-rr-angle-down"></i>
+        <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+      </aside><aside>
+        <a href=""><i class="fi fi-rr-interrogation"></i>Dolor sit amet consectetur adipiscing elit?</a>
+        <i class="fi fi-rr-angle-down"></i>
+        <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+      </aside>
+    </article>
+    <article class="boxSlid">
+      <aside class="Slide">
+        <div class="cardSlid">
+          <h3>Saul Goodman</h3>
+          <span>CEO & Founder</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum optio eveniet molestiae, tenetur eos ab minima laborum quo maxime odit. <br> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div class="cardSlid">
+          <h3>Saul Goodman</h3>
+          <span>CEO & Founder</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum optio eveniet molestiae, tenetur eos ab minima laborum quo maxime odit. <br> <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </aside>      
+    </article>
+  </section>
+<!----end Asked_Questions---->
+
+<!----start galery---->
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <p>
+      Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+    </p>
+    <aside class="album">
+      <img class="element" data-src="/img/gallery/gallery-1.jpg">
+      <img class="element" data-src="/img/gallery/gallery-2.jpg">
+      <img class="element" data-src="/img/gallery/gallery-3.jpg">
+      <img class="element" data-src="/img/gallery/gallery-4.jpg">
+      <img class="element" data-src="/img/gallery/gallery-5.jpg">
+      <img class="element" data-src="/img/gallery/gallery-6.jpg">
+      <img class="element" data-src="/img/gallery/gallery-7.jpg">      
+      <img class="element" data-src="/img/gallery/gallery-8.jpg">
+    </aside>
+  </section>
+<!----end galery---->
+
+
+<!----start contact---->
+  <section class="contact" id="contact">
+    <h2>contact</h2>
+    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
   
+    <aside>
+      <div class="adres">
+        <div class="location">
+          <img src="/icons/icons8-mail-50.png" alt="">
+          <h3>Location</h3>
+          <p>A108 Adam Street, New York, NY 535022</p>
+        </div>
+        <div class="email">
+          <img src="/icons/icons8-mail-50.png" alt="">
+          <h3>Email</h3>
+          <p>kimcassalaxi@gmail.com</p>
+        </div>
+        <div class="phone">
+          <img src="/icons/icons8-iphone-50.png" alt="">
+          <h3>Phone:</h3>
+          <p>+244 937 957 153</p>
+        </div>
+      </div>
+      <form action="">
+        <input type="text" placeholder="Your Name" class="input txtname" id="txtname">
+        <input type="email" placeholder="Your Email" class="input txtemail" id="txtemail">
+        <input type="text" placeholder="Subject" class="input txtsubject" id="txtsuject">
+        <textarea name=""placeholder="Message" class="txtMessage" id="txtMessage" cols="30" rows="10"></textarea>
+        <button class="btn btnSend">Send Message</button>
+      </form>  
+    </aside>
+  </section>
+<!----end conatact---->
+<!----start footer---->
+
+<footer>
+  <article>
+    <aside>
+      <h2>Medilab</h2>
+      <p>
+        A108 Adam Street
+        New York, NY 535022
+        United States
+      </p>
+      <p><span>Phone:</span>+244 937 957 153</p>
+      <p><span>Email:</span> kimcassalaxi@gmail.com</p>
+    </aside>
+  <table>
+    <tr >
+      <th>Useful Links</th>
+      <th>Our Services</th>
+    </tr>
+    <tr>
+      <td>Home</td>
+      <td>Web Design</td>
+    </tr>
+    <tr>
+      <td>About us</td>
+      <td>Web Development</td>
+    </tr>
+    <tr>
+      <td>Services</td>
+      <td>Product Management</td>
+    </tr>
+    <tr>
+      <td>Terms of service</td>
+      <td>Marketing</td>
+    </tr>
+    <tr>
+      <td>Privacy policy</td>
+      <td>Graphic Design</td>
+    </tr>
+  </table>
+  <div class="newletter">
+    <h3>Join Our Newsletter</h3>
+    <p>
+      Tamen quem nulla quae legam multos aute sint culpa legam noster magna
+    </p>
+    <div class="subcribe">
+      <input type="text" name="" id="">
+      <button class="btn btnsubcribe" id="btnsubcribe">Subcribe</button>
+    </div>
+  </div>
+</article>
+<div class="footer">
+  <p>
+    © Copyright Medilab. All Rights Reserved
+    <br>
+    Designed by <span>BootstrapMade</span>
+  </p>
+  <div class="social">
+    <a href=""><img class="icons" src="/icons/icons8-twitter-50.png"></a>
+    <a href=""><img class="icons" src="/icons/icons8-facebook-50.png"></a>
+    <a href=""><img class="icons" src="/icons/icons8-instagram-50.png"></a>
+    <a href=""><img class="icons" src="/icons/icons8-linkedin-50.png"></a>
+  </div>
+</div>
+</footer>
+<!----end footer---->
+
+
+<script src="js/main.js"></script>
 </body>
 </html>
